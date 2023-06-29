@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="container">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="title">
+                <h4><span>News</span> Portal</h4>
+            </div>
+            <div class="navbar">
+                <ul class="d-flex gap-2 align-items-center list-unstyled">
+                    <li><a class="text-decoration-none" href="News">News</a></li>
+                    <li><a class="text-decoration-none" href="Blog">Blog</a></li>
+                    <li><a href="#"><img src="./assest/Avatar.png" alt=""></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <hr>
+    </div>
+
+
+    <!-- Main Section -->
+    <main>
+        <!-- News Title -->
+        <section class="container news-title d-flex justify-content-between" id="news-container">
+            
+        </section>
+        <!-- News Alert -->
+        <section class="newsalert container">
+            <div class="alert p-3 bg-light border-0 mt-3 alert-light" role="alert" id="alert-container">
+                <span id="news-count">0</span> items found for category <span id="news-category"></span>
+              </div>
+        </section>
+        <!-- News Content -->
+        <section class="content-header container">
+            <div class="content-header d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <p>Sort By View:</p>
+                    <select class="h-50 ms-2" name="" id="">
+                        <option value="1">Default</option>
+                        <option value="2">Select</option>
+                        <option value="3">Select</option>
+                        <option value="4">Select</option>
+                    </select>
+                </div>
+                <div class="d-flex">
+                    <button class="btn btn-danger me-2">Today's Pick</button>
+                    <button class="btn btn-primary">Trending</button>
+                </div>
+            </div>
+        </section>
+        <!-- Main News -->
+        <section class="main-news container mt-5" id="main-news-sect">
+
+        </section>
+        <!-- Modal -->
+        <section class="mymodal" id="mymodal">
+            <div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalTitle"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="details-body">
+                    <div id="modal-body"></div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
